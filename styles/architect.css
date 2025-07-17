@@ -8,3 +8,75 @@
   font-weight: 400px;
   font-style: normal;
 }
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+.text-black{
+  color: #131313;
+}
+.bg-light{
+  color: rgba(255, 144, 14, 0.1);
+}
+.text-gray{
+  color: #424242;
+}
+.text-light-gray{
+  color: #727272;
+}
+
+.btn-primary{
+  background-color: #FF900E;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* navigation bar */
+.brand{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+  list-style: none;
+  
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: bold;
+  font-size: 4rem;
+}
+.banner-image{
+  width: 100%;
+}
+
+/* responsive query- small device */
+@media screen and (max-width:576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
+  
+}
